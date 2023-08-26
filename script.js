@@ -1,14 +1,13 @@
 //0-----------------------------
 function isWorkingAgePerson (age) {
-    const isAge = age >= 18 && age <= 65 ? 'true' : 'false';
-    console.log(isAge);
+    return age >= 18 && age <= 65;
 }
 
-isWorkingAgePerson(20); 
-isWorkingAgePerson(4); 
-isWorkingAgePerson(88); 
-isWorkingAgePerson(18); 
-isWorkingAgePerson(65); 
+console.log(isWorkingAgePerson(20)); 
+console.log(isWorkingAgePerson(12)); 
+console.log(isWorkingAgePerson(18)); 
+console.log(isWorkingAgePerson(65));  
+console.log(isWorkingAgePerson(88)); 
 
 
 //1----------------------------
@@ -32,13 +31,13 @@ console.log(isPrimeNumber(81));
 
 //2---------------------------
 let checkMultiplicity = function (divisible, divisor) {
-    !(divisible % divisor) ? console.log('true') : console.log('false');
+    return !(divisible % divisor);
 }
 
-checkMultiplicity(25, 5) // true
-checkMultiplicity(15, 3) // true
-checkMultiplicity(15, 5) // true
-checkMultiplicity(15, 4) // false
+console.log(checkMultiplicity(25, 5)) // true
+console.log(checkMultiplicity(15, 3)) // true
+console.log(checkMultiplicity(15, 5)) // true
+console.log(checkMultiplicity(15, 4)) // false
 
 
 //3--------------------------
